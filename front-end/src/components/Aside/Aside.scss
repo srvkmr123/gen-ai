@@ -36,6 +36,10 @@
                     color: var(--link-clr);
                     display: flex;
                     align-items: center;
+                    &:hover{
+                        color: white;
+                        font-weight: 800;
+                    }
                 }
             }
         }
