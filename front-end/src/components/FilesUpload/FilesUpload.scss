@@ -1,8 +1,9 @@
-input::-webkit-file-upload-button,.select-folder{
-width: max-content;
+input::-webkit-file-upload-button,.select-folder,.file-upload{
+width: 250px;
+outline: none;
 box-sizing: border-box;
 padding: 8px 16px;
-border: 1px solid var(--heading-clr);
+// border: 1px solid var(--heading-clr);
 color: var(--heading-clr);
 background-color: inherit;
 font-size: 0.8rem;
