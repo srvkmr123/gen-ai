@@ -1,11 +1,17 @@
-input::-webkit-file-upload-button{
-width: 150px;
+input::-webkit-file-upload-button,.select-folder{
+width: max-content;
+box-sizing: border-box;
 padding: 8px 16px;
 border: 1px solid var(--heading-clr);
 color: var(--heading-clr);
 background-color: inherit;
+font-size: 0.8rem;
+text-align: center;
+display: flex;
+align-items: center;
+margin-bottom: 2px;
 }
-input::-webkit-file-upload-button:hover{
+input::-webkit-file-upload-button:hover,.select-folder:hover{
     background-color: var(--heading-clr);
     color: var(--bg-purple);
 }
@@ -14,9 +20,27 @@ input::-webkit-file-upload-button:hover{
  color: white;
  outline: none;
  border: none;
+ margin-top: 1rem;
  padding: 8px 16px;
  font-size: 1em;
   &:hover{
     background-color: #0893de;
   }
+}
+.files-list{
+
+  font-size: .8rem;
+  font-style: italic;
+  color: rgb(214, 210, 210);
+}
+.files-ol{
+  outline: 1px solid rgba(49, 42, 49, 0.381);
+  width: 80%;
+  margin: 0;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  max-height: 100px;
+  overflow: auto;
 }

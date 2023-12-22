@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "filepond": "^4.30.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-filepond": "^7.1.2",
     "react-icons": "^4.12.0",
     "react-router-dom": "^6.21.1"
   },
