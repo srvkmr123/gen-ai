@@ -1,12 +1,14 @@
 
-import './App.css'
+import './App.scss'
+import Aside from './components/Aside/Aside'
 
 function App() {
   
   return (
-    <>
-     <div>GEN AI FRONT-END</div>
-    </>
+    <div className='app'>
+     <Aside/>
+     <div className="main" style={{background:'green',flexGrow:2}}>main</div>
+    </div>
   )
 }
 
