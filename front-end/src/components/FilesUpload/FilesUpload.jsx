@@ -27,7 +27,7 @@ function FilesUpload() {
 
     const renderFileList = () => (<ol>
         {[...files].map((f, i) => (
-            <li key={i}>{f.name} - {f.type}</li>
+            <li key={i}>{f.name.substring(0,10)} - {f.type}</li>
         ))}
     </ol>)
 

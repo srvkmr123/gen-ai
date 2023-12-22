@@ -1,11 +1,17 @@
 .aside{
     background-color: var(--bg-purple);
-    width: 30vw;
+    width: 22vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 50px;
+    align-items: start;
+    padding-left: 2rem;
     &__use-cases,&__pinecode-indexes{
+        border-left: var(--border);
+        border-bottom: var(--border);
+        padding-left: 1rem;
+        padding-top: 20px;
+        width: 90%;
+        padding-bottom: 20px;
         h2{
             color: var(--heading-clr);
         }
@@ -25,5 +31,10 @@
                 }
             }
         }
+    }
+    &__filesupload-btn{
+        padding-top: 2rem;
+        border-left: var(--border);
+        padding-left: 1rem;
     }
 }

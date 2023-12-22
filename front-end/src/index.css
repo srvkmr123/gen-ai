@@ -4,8 +4,10 @@
     --bg-purple:#A020F0;
     --link-clr:#ece9eff7;
     --heading-clr:rgb(246, 240, 240);
+    --border:2px solid rgb(221, 137, 221,0.381);
 }
 body{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
