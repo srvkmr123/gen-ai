@@ -45,8 +45,8 @@ function FilesUpload() {
             className='choose-file'
             onChange={(e)=> setFiles(e.target.files)} />
         {renderFileList()}
-        <button id='file-upload-btn' onClick={handleUploadClick}>
-           Upload
+        <button className='file-upload-btn' onClick={handleUploadClick}>
+        <i className="fa-solid fa-arrow-up-from-bracket"></i> Upload
         </button>
     </div>)
 }
