@@ -1,6 +1,9 @@
 .aside{
     h1{
-        color: rgba(0, 0, 0, 0.664);
+        color: var(--heading-clr);
+        font-size: 3rem;
+        display: flex;
+        align-items: center;
     }
     background-color: var(--bg-purple);
     width: 22vw;
@@ -31,6 +34,8 @@
                     
                     text-decoration: none;
                     color: var(--link-clr);
+                    display: flex;
+                    align-items: center;
                 }
             }
         }
