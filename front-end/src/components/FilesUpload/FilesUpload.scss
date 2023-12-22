@@ -1,0 +1,11 @@
+input::-webkit-file-upload-button{
+width: 150px;
+padding: 5px;
+border: 1px solid var(--heading-clr);
+color: var(--heading-clr);
+background-color: inherit;
+}
+input::-webkit-file-upload-button:hover{
+    background-color: var(--heading-clr);
+    color: var(--bg-purple);
+}

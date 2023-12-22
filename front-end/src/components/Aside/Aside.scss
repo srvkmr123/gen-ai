@@ -1,4 +1,29 @@
 .aside{
-    background-color: #A020F0;
-    flex-grow: 1;
+    background-color: var(--bg-purple);
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    &__use-cases,&__pinecode-indexes{
+        h2{
+            color: var(--heading-clr);
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            li{
+                
+                a{
+                    
+                    text-decoration: none;
+                    color: var(--link-clr);
+                }
+            }
+        }
+    }
 }
