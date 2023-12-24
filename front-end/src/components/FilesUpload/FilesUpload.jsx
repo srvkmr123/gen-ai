@@ -10,11 +10,13 @@ import './FilesUpload.scss'
  const FileUpload = () => {
   const uppy = React.useMemo(() => {
     return new Uppy({
-      restrictions: { maxNumberOfFiles: 10 },
+    debug:true,
+      restrictions: { maxNumberOfFiles: 25 },
       autoProceed: false,
       
     }).use(XHR, { endpoint: "https://httpbin.org/post"})
   }, []);
-	return <Dashboard className='uppy-dashboard' uppy={uppy} plugins={[]} width='250px' height='200px'/>;
+	return <Dashboard className='uppy-dashboard' uppy={uppy} plugins={[]} width='250px' height='250px' proudlyDisplayPoweredByUppy={false} />
+   
 };
 export default FileUpload 
