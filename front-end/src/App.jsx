@@ -7,7 +7,7 @@ function App() {
   return (
     <div className='app'>
      <Aside/>
-     <div className="main" style={{background:'green',flexGrow:2}}>main</div>
+     <div className="main" style={{flexGrow:1}}>main</div>
     </div>
   )
 }
