@@ -15,6 +15,13 @@ import './FilesUpload.scss'
       autoProceed: false,
       
     }).use(XHR, { endpoint: "https://httpbin.org/post"})
+    .on('complete',result=>{
+      // console.log(res);
+      result.successful.forEach((file) => {
+        const responseData = file.response;
+        console.log('Response data for file', file.id, responseData);
+      });
+    })
   }, []);
 	return <Dashboard className='uppy-dashboard' uppy={uppy} plugins={[]} width='250px' height='250px' proudlyDisplayPoweredByUppy={false} />
    
