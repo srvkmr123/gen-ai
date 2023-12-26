@@ -27,7 +27,7 @@ import './FilesUpload.scss'
     })
   }, []);
   
-	return <Dashboard ref={dashboardRef} className='uppy-dashboard'  uppy={uppy}  width='250px' height='250px' proudlyDisplayPoweredByUppy={false} target='#uppy-dashboard'/>
+	return <Dashboard ref={dashboardRef} className='uppy-dashboard'  uppy={uppy}  width='220px' height='250px' proudlyDisplayPoweredByUppy={false} />
    
 };
 export default FileUpload 
