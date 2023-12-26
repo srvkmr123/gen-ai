@@ -7,12 +7,14 @@ import { FiThumbsUp } from "react-icons/fi";
 import { BsFileEarmarkRuled } from "react-icons/bs";
 import { RiCompassDiscoverLine } from "react-icons/ri";
 import { SiMinds } from "react-icons/si";
+import metlifeLogo from '../../assets/metlife-logo2.png'
 
 function Aside() {
   return (
     <div className='aside' >
         <div className="custom-scroll">
-        <h1><SiMinds style={{marginRight:'5px'}}/>Gen AI</h1>
+        {/* <div className='metlife-logo'><img src={metlifeLogo} alt="metlife logo" /></div>     */}
+        <h1>ChatGPT 3.5 Turbo</h1>
         <div className="aside__use-cases">
             <h2>Use Cases</h2>
         <ul>

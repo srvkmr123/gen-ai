@@ -26,9 +26,18 @@
 .aside .custom-scroll {
   min-height: 100vh;
 }
+.aside .metlife-logo {
+  height: 70px;
+  outline: 1px solid red;
+}
+.aside .metlife-logo img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .aside h1 {
   color: var(--heading-clr);
-  font-size: 3rem;
+  font-size: 1.8rem;
   display: flex;
   align-items: center;
 }
