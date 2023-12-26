@@ -50,9 +50,8 @@ function PromptPage() {
           <form onSubmit={handleChat}>
             <input type="text" className='prompt-input' onChange={(e) => handleInput(e)} placeholder='Enter your Message'
               name="promptInput" value={promptInput}></input>
-            <img className="icon" src={paperPlane}  ></img>
+            <img className="icon" onClick={handleChat} src={paperPlane}  ></img>
           </form>
-
         </div>
       </div>
     </div>
