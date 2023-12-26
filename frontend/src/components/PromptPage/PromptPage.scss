@@ -1,5 +1,7 @@
 .main{
     position:relative;
+    max-width: calc(100vw - 300px);
+    box-sizing: border-box;
 .right-container{
     height:95vh;
     background-color:white;
@@ -9,7 +11,7 @@
     // background-color: white;
 margin:2.4vh;
         .user-data{
-            text-align: right;
+            text-align: left;
             font-size:17px;
             margin:2%;
         }
@@ -20,13 +22,13 @@ margin:2.4vh;
         position: absolute;
         bottom: 0px;
         margin-left:12%;
-        
         display: flex;
         background-color: rgb(245, 243, 243);
         border-radius: 50px;
         border:2px solid gray;
         form{
             display:flex;
+            margin: 0 auto;
         }
         .icon{
             margin:3%;

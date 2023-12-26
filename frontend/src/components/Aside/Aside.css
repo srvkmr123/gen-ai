@@ -15,6 +15,7 @@
 .aside {
   height: 100vh;
   overflow-y: auto;
+  box-sizing: border-box;
   background-color: var(--bg-purple);
   width: 300px;
   display: flex;

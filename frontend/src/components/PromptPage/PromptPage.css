@@ -1,5 +1,7 @@
 .main {
   position: relative;
+  max-width: calc(100vw - 300px);
+  box-sizing: border-box;
 }
 .main .right-container {
   height: 95vh;
@@ -11,7 +13,7 @@
   margin: 2.4vh;
 }
 .main .right-container .chat-area .user-data {
-  text-align: right;
+  text-align: left;
   font-size: 17px;
   margin: 2%;
 }
@@ -26,6 +28,7 @@
 }
 .main .right-container .prompt-input-div form {
   display: flex;
+  margin: 0 auto;
 }
 .main .right-container .prompt-input-div .icon {
   margin: 3%;
