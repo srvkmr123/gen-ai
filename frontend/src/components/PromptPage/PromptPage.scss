@@ -1,0 +1,51 @@
+.main{
+    position:relative;
+.right-container{
+    height:95vh;
+    background-color:white;
+    .chat-area{
+        height:78vh;
+        overflow-y: auto;
+    // background-color: white;
+margin:2.4vh;
+        .user-data{
+            text-align: right;
+            font-size:17px;
+            margin:2%;
+        }
+    }
+    
+   
+    .prompt-input-div{
+        position: absolute;
+        bottom: 0px;
+        margin-left:12%;
+        
+        display: flex;
+        background-color: rgb(245, 243, 243);
+        border-radius: 50px;
+        border:2px solid gray;
+        form{
+            display:flex;
+        }
+        .icon{
+            margin:3%;
+            width:20px;
+            cursor: pointer;
+        }
+        .prompt-input{
+            width:50vw;
+            padding-left:20px;
+            
+            outline:none;
+            line-height: normal;
+            font-size: 17px;
+            background-color: rgb(245, 243, 243);
+           border:none;
+            border-radius: 40px;
+        }
+    }
+}
+
+
+}
