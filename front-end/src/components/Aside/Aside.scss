@@ -1,4 +1,28 @@
+.aside::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px var(--bg-purple);
+	background-color: #F5F5F5;
+}
+
+.aside::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+.aside::-webkit-scrollbar-thumb
+{
+	background-color: var(--bg-purple);
+}
 .aside{
+    height:100vh;
+    overflow-y:auto;
+   
+.custom-scroll
+{
+	min-height: 100vh;
+}
+
     h1{
         color: var(--heading-clr);
         font-size: 3rem;
