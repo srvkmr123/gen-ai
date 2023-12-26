@@ -12,3 +12,24 @@
     background-color: rgb(255, 255, 255);
     
 }
+.uppy-Dashboard-browse{
+    all: unset;
+    height: 150px;
+    width: 90%;
+    box-sizing: border-box;
+    border: none !important;
+    color: blue;
+    &:hover{
+        border: none;
+    }
+    &::before{
+        content: "\e09a";
+  display: inline-block;
+  margin-right: 0.5rem;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    }
+}
