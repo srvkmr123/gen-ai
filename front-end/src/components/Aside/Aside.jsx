@@ -10,7 +10,8 @@ import { SiMinds } from "react-icons/si";
 
 function Aside() {
   return (
-    <div className='aside'>
+    <div className='aside' >
+        <div className="custom-scroll">
         <h1><SiMinds style={{marginRight:'5px'}}/>Gen AI</h1>
         <div className="aside__use-cases">
             <h2>Use Cases</h2>
@@ -31,6 +32,7 @@ function Aside() {
         </div>
         <div className="aside__filesupload-btn">
            <FilesUpload/>
+        </div>
         </div>
     </div>
   )
