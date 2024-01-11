@@ -18,11 +18,12 @@ import './FilesUpload.scss'
       autoProceed: false,
       
     })
-    .use(XHR, { endpoint: "https://httpbin.org/post"})
+    .use(XHR, { endpoint: "http://localhost:8000/genai/ingestion"})
     .on('complete',result=>{
       result.successful.forEach((file) => {
         const responseData = file.response;
         console.log('Response data for file', file.id, responseData);
+        localStorage.setItem("success",true);
       });
     })
   }, []);
