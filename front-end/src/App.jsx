@@ -4,19 +4,20 @@ import Aside from './components/Aside/Aside'
 import Header from './components/Header/Header'
 import PromptPageAPIDiscover from './components/PromptPageAPIDiscover/PromptPageAPIDiscover'
 import PromptPageAPIExtraction from './components/PromptPageAPIExtraction/PromptPageAPIExtraction'
+import { useState } from 'react'
 
 function App() {
-  
+  const [isUploadSuccess,setIsUploadSuccess]= useState(false)
   return (
     < div className='app'>
       <div>
         <Header/>
         </div>
         <div className="main-content">
-          <Aside/>
+          <Aside setIsUploadSuccess={setIsUploadSuccess} />
           <div className="main" style={{flexGrow:1}}>
           <Routes>
-            <Route path='/' element={<PromptPageAPIDiscover/>} />
+            <Route path='/' element={<PromptPageAPIDiscover isUploadSuccess={isUploadSuccess} setIsUploadSuccess={setIsUploadSuccess}/>} />
             <Route path='/extraction' element={<PromptPageAPIExtraction/>} />
           </Routes>
           </div>

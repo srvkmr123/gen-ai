@@ -7,7 +7,7 @@ import '@uppy/dashboard/dist/style.min.css';
 import XHR from '@uppy/xhr-upload';
 import './FilesUpload.scss'
 
- const FileUpload = () => {
+ const FileUpload = ({setIsUploadSuccess}) => {
 
   const dashboardRef = useRef(null);
 
@@ -24,6 +24,7 @@ import './FilesUpload.scss'
         const responseData = file.response;
         console.log('Response data for file', file.id, responseData);
         localStorage.setItem("success",true);
+        setIsUploadSuccess(true)
       });
     })
   }, []);

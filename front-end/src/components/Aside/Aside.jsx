@@ -9,7 +9,7 @@ import { RiCompassDiscoverLine } from "react-icons/ri";
 import { SiMinds } from "react-icons/si";
 import metlifeLogo from '../../assets/metlife-logo2.png'
 
-function Aside() {
+function Aside({setIsUploadSuccess}) {
   return (
     <div className='aside' >
         <div className="custom-scroll">
@@ -32,7 +32,7 @@ function Aside() {
         </ul>
         </div>
         <div className="aside__filesupload-btn">
-           <FilesUpload/>
+           <FilesUpload setIsUploadSuccess={setIsUploadSuccess}  />
         </div>
         </div>
     </div>
