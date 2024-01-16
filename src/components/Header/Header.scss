@@ -1,0 +1,23 @@
+.header{
+    height: 72px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: rgba(0,0,0,0.2) 0 2px 2px 0;
+    background-color: #fff;
+    z-index: 1000;
+    overflow: hidden;
+    .header-left{
+        align-items: center;
+        gap: 20px;
+        margin-left: 0;
+        .header-icon>img{
+            width: 180px;
+        }
+    }
+}
