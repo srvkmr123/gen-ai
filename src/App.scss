@@ -1,0 +1,11 @@
+.app{
+   
+    min-height: 100dvh;
+    overflow:auto ;
+    scroll-behavior: smooth;
+    .main-content{
+        display: flex;
+        margin-top: 5%;
+    }
+    
+}

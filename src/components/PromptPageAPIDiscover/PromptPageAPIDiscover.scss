@@ -1,0 +1,76 @@
+.main {
+    position: relative;
+    max-width: calc(100vw - 300px);
+    box-sizing: border-box;
+
+    .right-container {
+        height: 85vh;
+        background-color: white;
+
+        .chat-area {
+            height: 70vh;
+            overflow-y: auto;
+            // background-color: white;
+            margin: 2.4vh;
+
+            .user-data {
+                .user-right-div {
+                    text-align: right;
+                    font-size: 17px;
+                    margin: 2%;
+                    background-color: #65baf262;
+                    padding: 1% 0;
+                    padding-right: 10px;
+                    border-radius: 10px;
+                }
+
+                .user-left-div {
+                    text-align: left;
+                    font-size: 17px;
+                    margin: 2%;
+
+                    .loader-span {
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+
+
+        .prompt-input-div {
+            position: absolute;
+            bottom: 0px;
+            margin-left: 14%;
+            display: flex;
+            background-color: rgb(245, 243, 243);
+            border-radius: 50px;
+            border: 2px solid gray;
+
+            form {
+                display: flex;
+                margin: 0 auto;
+            }
+
+            .icon {
+                margin: 3%;
+                width: 20px;
+                cursor: pointer;
+            }
+
+            .prompt-input {
+                width: 50vw;
+                padding-left: 20px;
+
+                outline: none;
+                line-height: normal;
+                font-size: 17px;
+                background-color: rgb(245, 243, 243);
+                border: none;
+                border-radius: 40px;
+            }
+        }
+    }
+
+
+}
