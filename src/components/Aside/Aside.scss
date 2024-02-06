@@ -1,0 +1,86 @@
+.aside::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px var(--bg-blue);
+	background-color: #F5F5F5;
+}
+
+.aside::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+.aside::-webkit-scrollbar-thumb
+{
+	background-color: var(--bg-blue);
+}
+.aside{
+    height:89vh;
+    overflow-y:auto;
+    box-sizing: border-box;
+.custom-scroll
+{
+	min-height: 100vh;
+}
+    .metlife-logo{
+        height: 70px;   
+        outline: 1px solid red;
+        img{
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    h1{
+        color: var(--heading-clr);
+        font-size: 1.8rem;
+        display: flex;
+        align-items: center;
+    }
+    background-color: var(--bg-blue);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 2rem;
+    &__use-cases,&__pinecode-indexes{
+        border-left: var(--border);
+        border-bottom: var(--border);
+        padding-left: 1rem;
+        padding-top: 100px;
+        width: 90%;
+        padding-bottom: 20px;
+        h3{
+            color: var(--heading-clr);
+            font-size: 21px;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            li{
+                
+                a{
+                    
+                    text-decoration: none;
+                    color: var(--link-clr);
+                    display: flex;
+                    align-items: center;
+                    &:hover{
+                        color: white;
+                        font-weight: 800;
+                    }
+                }
+            }
+        }
+    }
+    &__filesupload-btn{
+        padding-top: 2rem;
+        border-left: var(--border);
+        padding-left: 1rem;
+        position: relative;
+        flex-grow: 1;
+    }
+}

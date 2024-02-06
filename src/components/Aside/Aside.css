@@ -1,0 +1,80 @@
+.aside::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px var(--bg-purple);
+  background-color: #F5F5F5;
+}
+
+.aside::-webkit-scrollbar {
+  width: 6px;
+  background-color: #F5F5F5;
+}
+
+.aside::-webkit-scrollbar-thumb {
+  background-color: var(--bg-purple);
+}
+
+.aside {
+  height: 100vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+  background-color: var(--bg-purple);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 2rem;
+}
+.aside .custom-scroll {
+  min-height: 100vh;
+}
+.aside .metlife-logo {
+  height: 70px;
+  outline: 1px solid red;
+}
+.aside .metlife-logo img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.aside h1 {
+  color: var(--heading-clr);
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+}
+.aside__use-cases, .aside__pinecode-indexes {
+  border-left: var(--border);
+  border-bottom: var(--border);
+  padding-left: 1rem;
+  padding-top: 10px;
+  width: 90%;
+  padding-bottom: 20px;
+}
+.aside__use-cases h2, .aside__pinecode-indexes h2 {
+  color: var(--heading-clr);
+}
+.aside__use-cases ul, .aside__pinecode-indexes ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.aside__use-cases ul li a, .aside__pinecode-indexes ul li a {
+  text-decoration: none;
+  color: var(--link-clr);
+  display: flex;
+  align-items: center;
+}
+.aside__use-cases ul li a:hover, .aside__pinecode-indexes ul li a:hover {
+  color: white;
+  font-weight: 800;
+}
+.aside__filesupload-btn {
+  padding-top: 2rem;
+  border-left: var(--border);
+  padding-left: 0rem;
+  position: relative;
+  flex-grow: 1;
+  overflow-x: hidden;
+}/*# sourceMappingURL=Aside.css.map */
